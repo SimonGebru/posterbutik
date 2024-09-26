@@ -10,21 +10,12 @@ body {
 main {
         margin-top: 50px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(7, 1fr);
         grid-template-rows: auto; 
-        gap: 40px; 
+        gap: 50px; 
         justify-items: center; 
         align-items: start; 
       }
-.character {
-        text-align: center; 
-    }
-    
-.ninja, .clown, .artist, .polis, .fotograf, .trainer, .astro, .dykare, .doctor {
-        width: 350px;
-        height: auto;
-      }
-
 .navicon {
         display: flex;
         justify-content: flex-start;
@@ -33,9 +24,78 @@ main {
         left: 20px;
         z-index: 10; 
         margin-top: 0; 
+      }      
+.character {
+        text-align: center; 
+    }
+    .character:nth-child(1) {
+        grid-column: 3 / 4;
+    }
+    .character:nth-child(2) {
+        grid-column: 4 / 5; 
+    }
+    .character:nth-child(3) {
+        grid-column: 5 / 6; 
+    }
+    .character:nth-child(4) {
+        grid-column: 3 / 4;
+        grid-row: 2;
+    }
+    .character:nth-child(5) {
+        grid-column: 4 / 5; 
+        grid-row: 2;
+    }
+    .character:nth-child(6) {
+        grid-column: 5 / 6; 
+        grid-row: 2;
+    }
+    .character:nth-child(7) {
+        grid-column: 3 / 4;
+        grid-row: 3;
+    }
+    .character:nth-child(8) {
+        grid-column: 4 / 5; 
+        grid-row: 3;
+    }
+    .character:nth-child(9) {
+        grid-column: 5 / 6; 
+        grid-row: 3;
+    }
+    .character:nth-child(10) {
+        grid-column: 3 / 4;
+        grid-row: 4;
+        background-color: white;
+        h2 {
+            color: black;
+        }
+        p {
+            color: black;
+        }
+    }
+    .character:nth-child(11) {
+        grid-column: 5 / 6; 
+        grid-row: 4;
+        background-color: white;
+        h2 {
+            color: black;
+        }
+        p {
+            color: black;
+        }
+    }
+   
+
+.ninja, .clown, .artist, .polis, .fotograf, .trainer, .astro, .dykare, .doctor {
+        width: 350px;
+        height: auto;
       }
+.kock, .fe {
+        width: 550px;
+        height: auto;
+}
+
 h2, p {
-        color: wheat;
+        color: white;
         text-align: center;
         margin: 30px;
       }
@@ -44,4 +104,7 @@ button {
     border: 1px solid black;
     border-radius: 25px;
 }
+
+
+
 
