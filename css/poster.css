@@ -144,7 +144,11 @@ address, ol {
     align-self: center;
     margin-left: 200px;
 }
-img:hover {
+.character img:hover {
+    transform: scale(1.1);
+}
+
+.footer-links img:hover {
     transform: scale(1.1);
 }
 
